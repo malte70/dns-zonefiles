@@ -1,0 +1,52 @@
+$TTL 7200
+@   IN SOA ns1.your-server.de. postmaster.your-server.de. (
+    2015111000   ; serial
+    14400        ; refresh
+    1800         ; retry
+    604800       ; expire
+    86400 )      ; minimum
+ 
+@                        IN NS      robotns3.second-ns.com.
+@                        IN NS      robotns2.second-ns.de.
+@                        IN NS      ns1.first-ns.de.
+ 
+@                        IN A       178.63.11.212
+abyss                    IN A       178.63.11.212
+app                      IN A       178.63.11.212
+aur                      IN A       178.63.11.212
+cloud                    IN A       178.63.11.237
+deepthought.khaos        IN A       178.63.11.250
+demeter                  IN A       178.63.11.237
+dorin                    IN A       178.63.11.250
+freemail                 IN A       178.63.11.237
+ftp                      IN A       178.63.11.212
+git                      IN A       178.63.11.250
+ip                       IN A       178.63.11.212
+jabber                   IN A       178.63.11.212
+khaos                    IN A       178.63.11.250
+mail                     IN A       178.63.11.237
+minecraft                IN A       178.63.11.248
+mirror                   IN A       178.63.11.212
+nntp                     IN A       178.63.11.250
+ntp                      IN A       178.63.11.250
+pad                      IN A       178.63.11.250
+pingme                   IN A       178.63.11.250
+rahmenwerk               IN A       178.63.11.212
+router.abyss             IN A       178.63.11.248
+tardis                   IN A       178.63.11.250
+test                     IN A       178.63.11.212
+*.test                   IN A       178.63.11.212
+web0                     IN A       178.63.11.212
+wiki                     IN A       178.63.11.250
+
+demeter                  IN AAAA    2a01:4f8:110:504c:1337::2
+gimli                    IN AAAA    2a01:4f8:120:23a8::2
+khaos                    IN AAAA    2a01:4f8:110:504c::42:666
+ntp                      IN AAAA    2a01:4f8:110:504c::42:666
+
+www                      IN CNAME   mcbx.de.
+@                        IN MX 10   mail
+_jabber._tcp             IN SRV     0 0 5269 jabber
+_xmpp-client._tcp        IN SRV     0 0 5222 jabber
+_xmpp-server._tcp        IN SRV     0 0 5269 jabber
+@                        IN TXT     "v=spf1 mx -all"
