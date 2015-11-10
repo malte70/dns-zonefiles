@@ -1,0 +1,17 @@
+$TTL 86400
+@   IN SOA ns1.soeren-bublitz.de. postmaster.robot.first-ns.de. (
+    2014072600   ; serial
+    14400        ; refresh
+    1800         ; retry
+    604800       ; expire
+    86400 )      ; minimum
+ 
+@                        IN NS      ns1.first-ns.de.
+@                        IN NS      robotns2.second-ns.de.
+@                        IN NS      robotns3.second-ns.com.
+ 
+@                        IN A       178.63.11.212
+www                      IN CNAME   @
+@                        IN MX 10   mail.flying-sheep.de.
+@                        IN TXT     "v=spf1 mx -all"
+
