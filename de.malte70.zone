@@ -1,0 +1,24 @@
+$TTL 86400
+@   IN SOA ns1.first-ns.de. postmaster.robot.first-ns.de. (
+    2015012900   ; serial
+    14400        ; refresh
+    1800         ; retry
+    604800       ; expire
+    86400 )      ; minimum
+ 
+@                        IN NS      robotns3.second-ns.com.
+@                        IN NS      robotns2.second-ns.de.
+@                        IN NS      ns1.first-ns.de.
+ 
+@                        IN A       178.63.11.212
+*                        IN A       178.63.11.212
+app                      IN A       178.63.11.250
+f                        IN A       178.63.11.250
+java-util                IN A       178.63.11.250
+khaos                    IN A       178.63.11.250
+twitter                  IN A       178.63.11.250
+khaos                    IN AAAA    2a01:4f8:110:504c::42:666
+www                      IN CNAME   malte70.de.
+@                        IN MX 10   mail.mcbx.de.
+@                        IN TXT     "v=spf1 mx -all"
+
