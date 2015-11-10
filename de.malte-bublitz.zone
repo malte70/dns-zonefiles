@@ -1,0 +1,19 @@
+$TTL 86400
+@   IN SOA ns1.first-ns.de. postmaster.robot.first-ns.de. (
+    2015011401   ; serial
+    14400        ; refresh
+    1800         ; retry
+    604800       ; expire
+    86400 )      ; minimum
+ 
+@                        IN NS      robotns3.second-ns.com.
+@                        IN NS      robotns2.second-ns.de.
+@                        IN NS      ns1.first-ns.de.
+ 
+@                        IN A       178.63.11.250
+blog                     IN A       178.63.11.250
+tardis                   IN A       178.63.11.250
+*.tardis                 IN A       178.63.11.250
+github                   IN CNAME   malte70.github.io.
+www                      IN CNAME   178.63.11.250
+
